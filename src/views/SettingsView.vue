@@ -1,5 +1,5 @@
 <template>
-
+  TEST SETTINGS
 </template>
 
 <script>

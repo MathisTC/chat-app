@@ -1,5 +1,5 @@
 <template>
-vdsf
+ TEST HOME
 </template>
 
 <script>

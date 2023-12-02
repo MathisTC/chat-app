@@ -1,6 +1,6 @@
 <template>
   <div >
-    <NavBar v-if="$userStore.isUserConnected()"/>
+    <NavBar :key="$userStore.isUserConnected()" v-if="$userStore.isUserConnected()"/>
     <RouterView />
   </div>
 </template>
