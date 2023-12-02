@@ -5,6 +5,8 @@ import "./assets/index.css";
 
 const app = createApp(App)
 
+app.use(VueWindowModal)
+
 app.use(router)
 
 app.mount('#app')
