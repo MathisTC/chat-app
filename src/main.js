@@ -5,7 +5,13 @@ import "./assets/index.css";
 
 const app = createApp(App)
 
-app.use(VueWindowModal)
+import userStore from '@/stores/user.js'
+const store = {
+  install: function (app) {
+    app.config.globalProperties.$userStore = userStore;
+  }
+};
+app.use(store)
 
 app.use(router)
 
