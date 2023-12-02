@@ -25,6 +25,20 @@ export default {
   methods: {
     goTo(id){
       this.menuSelected = id;
+      switch(id) {
+        case 1:
+          this.$router.push('/messages')
+          break
+        case 2:
+          this.$router.push('/')
+          break
+        case 3: 
+          this.$router.push('/settings')
+          break
+        default:
+          console.log("error")
+          break
+      }
     }
   }
 }

@@ -7,6 +7,8 @@ import RegisterView from "../views/RegisterView.vue"
 
 import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
+import MessagesView from '../views/MessagesView.vue'
+import SettingsView from '../views/SettingsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,6 +23,18 @@ const router = createRouter({
       path: '/about',
       name: 'about',
       component: AboutView,
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/settings',
+      name: 'settings',
+      component: SettingsView,
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/messages',
+      name: 'messages',
+      component: MessagesView,
       meta: { requiresAuth: true },
     },
     {
