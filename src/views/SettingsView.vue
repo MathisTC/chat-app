@@ -1,24 +1,19 @@
 <template>
-  TEST SETTINGS
+  <button @click="test">aaa</button>
 </template>
 
 <script>
-
 export default {
   data() {
     return {
     }
   },
-  components: {
-
-  },
-  mounted() {
-  },
   methods: {
+    test() {
+      this.$userStore.updateData()
+    }
   },
-};
+}
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

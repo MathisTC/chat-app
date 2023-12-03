@@ -1,7 +1,7 @@
 <template>
-  <div >
-    <NavBar :key="$userStore.isUserConnected()" v-if="$userStore.isUserConnected()"/>
+  <div class="h-screen flex flex-col justify-between">
     <RouterView />
+    <NavBar v-if="$userStore.isUserConnected()"/>
   </div>
 </template>
 

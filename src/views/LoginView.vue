@@ -50,13 +50,12 @@ export default {
     methods: {
         async login() {
             await this.$userStore.login(this.email, this.password).then(() => {
-                console.log('test')
                 this.$router.push('/')
             }).catch((err) => {
                 console.log(err)
             })
-        }
-    }
+        },
+}
 };
 </script>
 
