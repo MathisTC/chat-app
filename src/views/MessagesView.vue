@@ -1,8 +1,8 @@
 <template>
-  <div class="bg-accent-content h-full flex flex-col justify-between pb-4">
+  <div class="bg-accent-content h-full flex flex-col justify-between pb-16">
     <MessageHeader />
 
-    <div class="overflow-y-scroll h-full mb-2">
+    <div class="overflow-y-scroll h-full">
       <div v-for="(message, index) in messagesList" :key="index" class="chat" :class="$userStore.getUID() == message.userId ?  'chat-end' : 'chat-start'">
         <div class="chat-image avatar">
           <div class="w-10 rounded-full">
@@ -18,7 +18,7 @@
       </div>
     </div>
     
-    <MessageBottom @send="(message) => sendMessage(message)"  />
+    <MessageBottom class="fixed bottom-16 w-full" @send="(message) => sendMessage(message)"  />
   </div>
 </template>
 
