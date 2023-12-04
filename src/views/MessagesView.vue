@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-accent-content h-full flex flex-col justify-between pb-16">
+  <div class="bg-accent-content h-screen flex flex-col justify-between pb-16">
     <MessageHeader />
 
     <div class="overflow-y-scroll h-full">
