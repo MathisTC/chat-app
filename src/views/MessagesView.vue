@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-accent-content h-screen flex flex-col justify-between pb-16">
-    <MessageHeader />
+  <div class="bg-accent-content h-full flex flex-col justify-between pb-32">
+    <MessageHeader/>
 
     <div class="overflow-y-scroll h-full">
       <div v-for="(message, index) in messagesList" :key="index" class="chat" :class="$userStore.getUID() == message.userId ?  'chat-end' : 'chat-start'">
