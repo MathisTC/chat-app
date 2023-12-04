@@ -1,5 +1,5 @@
 <template>
-<div  class="btm-nav-custom">
+<div  class="btm-nav-custom fixed bottom-0">
   <button class="text-info" :class="menuSelected == 1 ? 'active': ''" @click="goTo(1)">
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 2H4C2.9 2 2 2.9 2 4V16C2 17.1 2.9 18 4 18H18L22 22V4C22 2.9 21.1 2 20 2M20 17.2L18.8 16H4V4H20V17.2Z" /></svg>
     <span class="btm-nav-custom-label">Messages</span>

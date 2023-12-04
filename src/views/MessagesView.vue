@@ -18,7 +18,7 @@
       </div>
     </div>
     
-    <MessageBottom @send="(message) => sendMessage(message)" />
+    <MessageBottom class="mb-16" @send="(message) => sendMessage(message)" />
   </div>
 </template>
 
