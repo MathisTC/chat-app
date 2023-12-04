@@ -46,6 +46,10 @@ export default {
 
 <style scoped>
 .btm-nav-custom {
+  background-image: url('../components/BottomBarBackgroundSVG.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
   padding-top: 4px;
   display: flex;
   width: 100%;
@@ -55,7 +59,6 @@ export default {
   padding-bottom: env(safe-area-inset-bottom);
   height: 4rem/* 64px */;
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
   color: currentColor;
 }
 .btm-nav-custom > * {
@@ -74,9 +77,7 @@ export default {
     .btm-nav-custom > *[disabled]:hover {
     pointer-events: none;
     --tw-border-opacity: 0;
-    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
     --tw-bg-opacity: 0.1;
-    color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
     --tw-text-opacity: 0.2;
   }
 }
@@ -85,7 +86,6 @@ export default {
     .btm-nav-custom > *[disabled]:hover {
     pointer-events: none;
     --tw-border-opacity: 0;
-    background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
     --tw-bg-opacity: 0.1;
     color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
     --tw-text-opacity: 0.2;
@@ -97,13 +97,11 @@ export default {
 .btm-nav-custom > *:where(.active) {
   border-top-width: 2px;
   --tw-bg-opacity: 1;
-  background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
 }
 .btm-nav-custom > *.disabled,
   .btm-nav-custom > *[disabled] {
   pointer-events: none;
   --tw-border-opacity: 0;
-  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
   --tw-bg-opacity: 0.1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
   --tw-text-opacity: 0.2;
@@ -112,7 +110,6 @@ export default {
   .btm-nav-custom > *[disabled] {
   pointer-events: none;
   --tw-border-opacity: 0;
-  background-color: var(--fallback-n,oklch(var(--n)/var(--tw-bg-opacity)));
   --tw-bg-opacity: 0.1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
   --tw-text-opacity: 0.2;
