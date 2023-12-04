@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-accent-content h-full flex flex-col justify-between mb-16">
+  <div class="bg-accent-content h-full flex flex-col justify-between pb-4">
     <MessageHeader />
 
     <div class="overflow-y-scroll h-full mb-2">
@@ -18,7 +18,7 @@
       </div>
     </div>
     
-    <MessageBottom @send="(message) => sendMessage(message)" class="mb-16" />
+    <MessageBottom @send="(message) => sendMessage(message)"  />
   </div>
 </template>
 
