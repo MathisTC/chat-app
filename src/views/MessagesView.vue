@@ -1,8 +1,7 @@
 <template>
   <MessageHeader class="fixed w-full"/>
-  <div class="bg-accent-content h-full flex flex-col justify-between pb-32 pt-16 overflow-y-scroll">
-
-    <div class="overflow-y-scroll h-full" ref="messageList">
+  <div class="message-list h-full flex flex-col justify-between pb-32 pt-16 overflow-y-scroll">
+    <div class=" overflow-y-scroll h-full" ref="messageList">
       <div v-for="(message, index) in messagesList" :key="index" class="chat" :class="$userStore.getUID() == message.userId ?  'chat-end' : 'chat-start'">
         <div class="chat-image avatar">
           <div class="w-10 rounded-full">
@@ -40,10 +39,8 @@ export default {
   },
   async mounted() {
     this.getMessagesFromDatabase()
-    this.scrollMessageListToBottom();
     onSnapshot(collection(db, 'message'), (snap) => {
       this.getMessagesFromDatabase()
-      this.scrollMessageListToBottom();
       })
       },
   methods: {
@@ -58,6 +55,7 @@ export default {
       for(let i = 0; i< data.length; i++) {
         this.messagesList[i] = data[i]
       }
+      this.scrollMessageListToBottom();
     })
     },
     scrollMessageListToBottom() {
@@ -68,4 +66,10 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.message-list {
+  background-image: url('../components/MessageBackgroundSVG.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+</style>

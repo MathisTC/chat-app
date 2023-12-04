@@ -7,7 +7,7 @@
             <div
                 class="w-full mt-32 rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
-                    <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl text-white">
+                    <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
                         Connectez vous à votre compte
                     </h1>
                     <form class="space-y-4 md:space-y-6" @submit.prevent="login">
@@ -15,7 +15,7 @@
                             <label for="email"
                                 class="block mb-2 text-sm font-medium text-white">Email</label>
                             <input v-model="email" type="email" name="email" id="email"
-                                class="border border-gray-300 sm:text-sm rounded-lg  block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
+                                class="bordersm:text-sm rounded-lg  block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500"
                                 placeholder="Email" required="">
                         </div>
                         <div>

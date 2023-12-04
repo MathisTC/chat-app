@@ -104,6 +104,10 @@ export default {
         this.error = "Les mots de passe ne sont pas identiques"
         return;
       }
+      if (!this.fileBytes || this.fileBytes == null) {
+        this.error = "Veuillez selectionner une image"
+        return;
+      }
       await this.$userStore.register(this.email, this.password).then(() => {
         uploadImage(this.fileBytes, this.$userStore.getUID()).then(() => {
           createUserData(this.$userStore.getUID(), this.nom, this.prenom, this.$userStore.getUID()).then(() => {
