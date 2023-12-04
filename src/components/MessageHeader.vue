@@ -1,5 +1,5 @@
 <template>
-  <div class="py-2 px-3 bg-slate-900 flex flex-row justify-between items-center">
+  <div class="py-2 px-3 bg-slate-900 flex flex-row justify-between items-center message-header">
     <div>
       <img class="w-10 h-10 rounded-full" :src="$userStore.getUserImage()" />
     </div>
@@ -40,4 +40,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.message-header {
+  background-image: url('../components/MessageHeaderBackgroundSVG.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+</style>

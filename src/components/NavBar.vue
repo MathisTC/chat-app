@@ -120,4 +120,5 @@ export default {
 .btm-nav-custom > * .label {
   font-size: 1rem/* 16px */;
   line-height: 1.5rem/* 24px */;
-}</style>
+}
+</style>
