@@ -1,7 +1,7 @@
 <template>
   <div class="py-2 px-3 bg-slate-900 flex flex-row justify-between items-center">
     <div>
-      <img class="w-10 h-10 rounded-full" :src="$userStore.getProfilePic()" />
+      <img class="w-10 h-10 rounded-full" :src="$userStore.getUserImage()" />
     </div>
     <div class="flex">
       <div class="ml-4">

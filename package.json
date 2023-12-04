@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "dayjs": "^1.11.10",
     "firebase": "^10.7.0",
     "vue": "^3.3.4",
     "vue-advanced-cropper": "^2.8.8",

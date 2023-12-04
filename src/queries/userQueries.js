@@ -3,33 +3,35 @@ import { setDoc, doc, updateDoc, getDoc, getDocs, collection, addDoc, deleteDoc,
 import { storage } from '../firebaseConfig';
 import { ref, deleteObject } from 'firebase/storage';
 
-export async function createUserData(userId, nom, prenom, image) {
+export async function createUserData(userId, nom, prenom, url) {
   try {
     await addDoc(collection(db, "userData"), {
+      userId: userId,
       nom: nom,
       prenom: prenom,
-      image: image,
+      image: url,
     });
-    console.log('Données utilisateur créées avec succès!');
-  } catch (error) {
+    } catch (error) {
     console.log(error)
     console.error('Erreur lors de la création des données utilisateur :', error);
   }
 }
 
 export async function getUserdata(id) {
-  console.log(id)
-  const docRefUserData = doc(db, "userData", id);
-  console.log(docRefUserData)
+  const userDataRef = collection(db, "userData");
+  const querySnapshot = await getDocs(query(userDataRef, where("userId", "==", id)));
 
-  const docSnap = await getDoc(docRefUserData);
-
-  if(docSnap) {
-    console.log(docSnap.data())
+  if (!querySnapshot.empty) {
+    // Récupérer le premier document correspondant à la requête
+    const docSnapshot = querySnapshot.docs[0];
+    const userData = docSnapshot.data();
+    return userData;
   } else {
-    // docSnap.data() will be undefined in this case
-    console.log("No such document!");
+    console.log("Aucun document correspondant trouvé !");
+    return null;
   }
+}
 
-  return res;
+export async function addUrlInUserData(imageId) {
+
 }

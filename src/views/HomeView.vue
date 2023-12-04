@@ -1,5 +1,7 @@
 <template>
- TEST HOME
+  <div>
+    BONJOUR {{ $userStore.getUserPrenom() }} {{ $userStore.getUserNom() }}
+  </div>
 </template>
 
 <script>
