@@ -1,11 +1,11 @@
 <template>
   <div class="h-screen flex flex-col justify-between background">
-    <RouterView class="h-[90%]" v-slot="{ Component }">
+    <RouterView class="h-[90%] sm:h-[75%]" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </RouterView>
-    <NavBar class="w-full h-[10%]" v-if="$userStore.isUserConnected()" />
+    <NavBar class="w-full h-[10%] sm:h-[7%]" v-if="$userStore.isUserConnected()" />
   </div>
 </template>
 
@@ -24,7 +24,10 @@ export default {
   data() {
     return {
     }
-  }
+  },
+  mounted() {
+    document.fullscreenEnabled
+    }
 }
 </script>
 

@@ -46,7 +46,7 @@ export default {
 <style scoped>
 .btm-nav-custom {
   background-image: url('../components/BottomBarBackgroundSVG.svg');
-  background-repeat: no-repeat;
+  background-repeat: round;
   background-size:contain;
 
   display: flex;
