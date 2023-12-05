@@ -1,6 +1,6 @@
 <template>
-  <div class="h-screen flex flex-col justify-between background">
-    <RouterView class="h-[90%]" v-slot="{ Component }">
+  <div class="h-screen flex flex-col justify-between background overflow-hidden">
+    <RouterView class="h-[90%] overflow-hidden" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
