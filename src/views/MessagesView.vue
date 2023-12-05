@@ -14,7 +14,7 @@
           {{ message.userPrenom }} {{ message.userNom }}
           <time class="text-xs opacity-50">{{ message.date }}</time>
         </div>
-        <div class="chat-bubble">{{ message.texte }}</div>
+        <div class="chat-bubble" :class="$userStore.getUID() == message.userId ? 'bg-[#0071fb] text-gray-800' : 'text-slate-300'">{{ message.texte }}</div>
       </div>
     </div>
     <MessageBottom class="relative bottom-0 w-full" @send="(message) => sendMessage(message)" />
@@ -78,9 +78,4 @@ export default {
 </script>
 
 <style scoped>
-.scroll-possible {
-  overflow-y: auto;
-  touch-action: initial;
-  overscroll-behavior-y:initial;
-}
 </style>

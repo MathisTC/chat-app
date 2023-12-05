@@ -31,13 +31,18 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .background {
   scroll-behavior: smooth;
   background-image: url('./components/BackgroundSVG.svg');
   background-repeat: repeat;
 }
 
+.scroll-possible {
+  overflow-y: auto;
+  touch-action: initial;
+  overscroll-behavior-y:initial;
+}
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s;
