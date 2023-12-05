@@ -1,5 +1,5 @@
 <template>
-  <section class="h-screen my-auto  bg-gray-900">
+  <section class="h-screen my-auto">
     <div class="flex flex-col items-center justify-center px-3 py-8 mx-auto md:h-screen lg:py-0">
       <a class="flex items-center mb-6 text-2xl font-semibold text-white">
         Enregistrement

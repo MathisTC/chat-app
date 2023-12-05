@@ -1,7 +1,11 @@
 <template>
-  <div class="h-screen flex flex-col justify-between">
-    <RouterView />
-    <NavBar class="fixed bottom-0 w-full" v-if="$userStore.isUserConnected()"/>
+  <div class="h-screen flex flex-col justify-between background">
+    <RouterView class="h-[90%]" v-slot="{ Component }">
+      <transition name="fade" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </RouterView>
+    <NavBar class="w-full h-[10%]" v-if="$userStore.isUserConnected()" />
   </div>
 </template>
 
@@ -24,4 +28,20 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+.background {
+  scroll-behavior: smooth;
+  background-image: url('./components/MessageBackgroundSVG.svg');
+  background-repeat: repeat;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+</style>

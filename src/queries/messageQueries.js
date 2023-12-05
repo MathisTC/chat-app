@@ -1,5 +1,5 @@
 import { db } from '../firebaseConfig';
-import { setDoc, doc, updateDoc, getDoc, getDocs, collection, addDoc, deleteDoc, query, where, orderBy } from "firebase/firestore";
+import { setDoc, doc, updateDoc, getDoc, getDocs, collection, addDoc, deleteDoc, query, where, orderBy, limit } from "firebase/firestore";
 import { storage } from '../firebaseConfig';
 import { ref, deleteObject } from 'firebase/storage';
 
@@ -30,11 +30,11 @@ export async function sendNewMessage(uid, prenom, nom, image, texte) {
 
 export async function getMessages() {
   let messages = []
-  const messageDataref = collection(db, "message");
-  const querySnapshot = await getDocs(query(messageDataref, orderBy("date")));
+  const messageDataRef = collection(db, "message");
+  const querySnapshot = await getDocs(query(messageDataRef, orderBy("date", "desc"), limit(20)));
 
   querySnapshot.forEach((doc) => {
     messages.push(doc.data());
   })
-  return messages;
+  return messages.reverse();
 }
