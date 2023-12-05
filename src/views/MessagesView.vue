@@ -1,8 +1,8 @@
 <template>
   <div class="justify-between flex flex-col">
-    <MessageHeader class="w-full h-[8%]" />
+    <MessageHeader class="w-full h-[8%] relative" />
     <div class="flex flex-col flex-1 overflow-hidden relative">
-      <div class="scroll-possible overflow-y-scroll flex-1 mb-16" ref="messageList">
+      <div class="scroll-possible overflow-y-scroll flex-1" ref="messageList">
       <div v-for="(message, index) in messagesList" :key="index" class="chat px-2"
         :class="$userStore.getUID() == message.userId ? 'chat-end' : 'chat-start'">
         <div class="chat-image avatar">
@@ -17,7 +17,7 @@
         <div class="chat-bubble">{{ message.texte }}</div>
       </div>
     </div>
-    <MessageBottom class="absolute bottom-0 w-full" @send="(message) => sendMessage(message)" />
+    <MessageBottom class="relative bottom-0 w-full" @send="(message) => sendMessage(message)" />
 
   </div>
   </div>
