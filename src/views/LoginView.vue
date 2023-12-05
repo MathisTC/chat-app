@@ -5,7 +5,7 @@
                 Connexion
             </a>
             <div
-                class="w-full mt-32 rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
+                class="w-full mt-32 rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-[#021137d9] border-gray-700">
                 <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
                     <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
                         Connectez vous à votre compte

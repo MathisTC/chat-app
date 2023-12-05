@@ -1,11 +1,11 @@
 <template>
-  <section class="h-screen my-auto">
+  <section class="h-screen my-auto overflow-scroll">
     <div class="flex flex-col items-center justify-center px-3 py-8 mx-auto md:h-screen lg:py-0">
       <a class="flex items-center mb-6 text-2xl font-semibold text-white">
         Enregistrement
       </a>
       <div
-        class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-gray-800 border-gray-700">
+        class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-[#021137d9] border-gray-700">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
             Créez un compte
@@ -17,7 +17,7 @@
             </div>
 
             <dialog id="my_modal_2" class="modal">
-              <div class="modal-box">
+              <div class="modal-box bg-[#021137d9]">
                 <h3 class="font-bold text-lg">Hello!</h3>
                 <p class="py-4">Veuillez choisir une image puis la rogner</p>
                 <input @change="onFileChange" type="file"
