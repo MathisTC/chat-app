@@ -1,7 +1,7 @@
 <template>
   <div class="justify-between flex flex-col">
     <MessageHeader class="fixed w-full h-[8%]" />
-    <div class=" overflow-y-scroll h-[85%] md:mt-14 mb-12 md:mb-14 mt-20" ref="messageList">
+    <div class="scroll-possible overflow-y-scroll h-[85%] md:mt-14 mb-12 md:mb-14 mt-20" ref="messageList">
       <div v-for="(message, index) in messagesList" :key="index" class="chat px-2"
         :class="$userStore.getUID() == message.userId ? 'chat-end' : 'chat-start'">
         <div class="chat-image avatar">
@@ -76,9 +76,9 @@ export default {
 </script>
 
 <style scoped>
-.message-list {
-  background-image: url('../components/MessageBackgroundSVG.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
+.scroll-possible {
+  overflow-y: auto;
+  touch-action: initial;
+  overscroll-behavior-y:initial;
 }
 </style>
