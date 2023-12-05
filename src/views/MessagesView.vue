@@ -1,7 +1,7 @@
 <template>
   <div class="justify-between flex flex-col">
-    <MessageHeader class="w-full h-[8%]"/>
-    <div class=" overflow-y-scroll h-[92%] sm:mb-16 mb-8"   ref="messageList">
+    <MessageHeader class="fixed w-full h-[8%]"/>
+    <div class=" overflow-y-scroll h-[85%] md:mt-14 mb-12 md:mb-14 mt-20"   ref="messageList">
       <div v-for="(message, index) in messagesList" :key="index" class="chat px-2" :class="$userStore.getUID() == message.userId ?  'chat-end' : 'chat-start'">
         <div class="chat-image avatar">
           <div class="w-10 rounded-full">

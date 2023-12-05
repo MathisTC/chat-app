@@ -1,0 +1,409 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1500" height="1000" preserveAspectRatio="none" viewBox="0 0 1500 1000">
+    <g mask="url(&quot;#SvgjsMask1275&quot;)" fill="none">
+        <rect width="1500" height="1000" x="0" y="0" fill="url(&quot;#SvgjsLinearGradient1276&quot;)"></rect>
+        <path d="M316.833,616.998C368.844,616.161,419.057,592.793,444.838,547.613C470.411,502.796,465.137,447.664,438.767,403.311C413.006,359.981,367.213,330.585,316.833,332.311C269.001,333.95,233.679,370.46,208.563,411.2C181.708,454.76,157.66,506.564,181.486,551.852C206.472,599.345,263.175,617.862,316.833,616.998" fill="rgba(22, 112, 134, 0.69)" class="triangle-float1"></path>
+        <path d="M979.445,191.288C1025.825,193.067,1074.172,177.884,1097.934,138.014C1122.166,97.355,1115.681,45.536,1090.015,5.767C1066.397,-30.828,1022.977,-46.957,979.445,-45.58C938.453,-44.283,901.271,-22.884,880.365,12.401C859.024,48.42,855.43,92.869,875.715,129.493C896.615,167.229,936.34,189.635,979.445,191.288" fill="rgba(22, 112, 134, 0.69)" class="triangle-float2"></path>
+        <path d="M111.731,589.951C153.434,592.262,193.236,567.188,212.029,529.888C229.322,495.566,214.301,457.135,195.553,423.586C176.16,388.883,151.457,351.899,111.731,350.403C70.192,348.838,34.454,379.481,16.207,416.83C-0.057,450.121,11.099,487.306,28.999,519.746C47.727,553.687,73.025,587.806,111.731,589.951" fill="rgba(22, 112, 134, 0.69)" class="triangle-float3"></path>
+        <path d="M1112.259,790.878C1200.152,791.925,1280.545,748.762,1329.807,675.965C1386.707,591.881,1430.588,483.809,1379.378,396.143C1328.432,308.93,1213.261,303.98,1112.259,303.547C1010.169,303.109,891.581,305.074,841.141,393.834C791.013,482.044,846.296,587.099,903.509,670.886C952.018,741.926,1026.243,789.853,1112.259,790.878" fill="rgba(22, 112, 134, 0.69)" class="triangle-float4"></path>
+        <path d="M1214.001,996.829C1255.642,995.114,1280.756,955.743,1301.352,919.512C1321.61,883.876,1341.124,842.977,1322.099,806.669C1302.072,768.449,1257.146,753.416,1214.001,752.806C1169.58,752.178,1122.692,765.066,1100.471,803.534C1078.244,842.013,1090.725,888.943,1113.23,927.26C1135.386,964.983,1170.29,998.629,1214.001,996.829" fill="rgba(22, 112, 134, 0.69)" class="triangle-float5"></path>
+        <path d="M18.494,112.539C42.85,112.283,60.962,92.863,73.133,71.765C85.294,50.684,93.25,25.16,81.045,4.105C68.867,-16.905,42.766,-21.745,18.494,-22.497C-7.642,-23.307,-37.801,-22.475,-51.151,0.009C-64.661,22.763,-52.095,50.431,-38.168,72.933C-25.17,93.934,-6.203,112.798,18.494,112.539" fill="rgba(22, 112, 134, 0.69)" class="triangle-float6"></path>
+        <path d="M434.203,1224.991C528.704,1220.398,611.766,1170.111,662.004,1089.938C716.005,1003.76,747.801,894.785,695.932,807.307C644.777,721.033,534.493,704.305,434.203,705.746C337.112,707.141,238.695,733.62,185.186,814.647C126.087,904.139,108.881,1022.435,164.519,1114.119C218.563,1203.176,330.153,1230.049,434.203,1224.991" fill="rgba(22, 112, 134, 0.69)" class="triangle-float7"></path>
+        <path d="M454.822,1011.447C559.144,1012.696,676.991,1019.009,736.124,933.057C801.155,838.532,788.312,710.58,729.652,611.974C672.306,515.577,566.68,451.904,454.822,460.198C353.82,467.687,293.286,560.437,242.551,648.092C191.677,735.988,133.723,838.767,184.951,926.457C235.941,1013.738,353.745,1010.237,454.822,1011.447" fill="rgba(22, 112, 134, 0.69)" class="triangle-float8"></path>
+        <path d="M877.445,601.757C934.355,602.172,986.988,569.858,1014.036,519.784C1039.862,471.972,1030.475,415.317,1003.692,368.035C976.454,319.95,932.709,278.592,877.445,278.653C822.264,278.714,778.524,320.102,751.677,368.312C725.658,415.035,718.894,470.738,744.259,517.819C770.935,567.334,821.202,601.347,877.445,601.757" fill="rgba(22, 112, 134, 0.69)" class="triangle-float9"></path>
+        <path d="M542.367,540.894C606.259,541.431,669.877,516.942,703.024,462.319C737.342,405.767,731.892,336.379,702.406,277.164C668.807,209.691,617.637,143.677,542.367,139.687C461.696,135.411,385.378,185.872,349.967,258.481C317.952,324.127,345.198,399.296,386.32,459.657C421.707,511.6,479.517,540.366,542.367,540.894" fill="rgba(22, 112, 134, 0.69)" class="triangle-float10"></path>
+        <path d="M562.946,119.409C605.555,120.926,646.782,96.961,665.731,58.767C683.076,23.806,665.491,-14.719,646.369,-48.74C626.689,-83.752,603.11,-123.951,562.946,-124.1C522.643,-124.249,496.933,-85.175,478.445,-49.363C461.821,-17.162,455.877,19.469,472.101,51.873C490.207,88.036,522.53,117.97,562.946,119.409" fill="rgba(22, 112, 134, 0.69)" class="triangle-float11"></path>
+        <path d="M1280.744,1078.841C1379.892,1073.398,1445.552,986.213,1492.336,898.628C1535.752,817.348,1559.949,721.669,1514.277,641.635C1468.277,561.026,1373.526,525.506,1280.744,527.841C1192.212,530.069,1114.77,578.507,1066.722,652.9C1013.488,735.323,980.631,836.628,1024.684,924.302C1072.658,1019.778,1174.054,1084.698,1280.744,1078.841" fill="rgba(22, 112, 134, 0.69)" class="triangle-float12"></path>
+        <path d="M170.056,1074.402C219.338,1072.932,253.665,1032.167,279.266,990.031C306.272,945.583,331.85,893.554,308.024,847.324C282.762,798.309,225.195,777.525,170.056,778.133C116.061,778.729,63.413,803.068,37.261,850.31C11.816,896.275,22.168,951.701,48.952,996.899C75.139,1041.09,118.711,1075.933,170.056,1074.402" fill="rgba(22, 112, 134, 0.69)" class="triangle-float13"></path>
+        <path d="M153.235,930.632C245.311,932.212,316.186,857.302,359.486,776.027C399.919,700.133,403.836,611.481,363.811,535.372C320.67,453.338,245.892,381.518,153.235,383.839C63.304,386.092,0.684,465.162,-39.828,545.483C-75.814,616.831,-76.914,697.714,-41.105,769.151C-0.652,849.852,62.976,929.083,153.235,930.632" fill="rgba(22, 112, 134, 0.69)" class="triangle-float14"></path>
+        <path d="M870.373,1141.767C933.925,1144.528,1000.195,1128.159,1035.541,1075.271C1074.719,1016.649,1083.983,937.944,1046.504,878.222C1010.775,821.289,937.588,811.728,870.373,812.082C803.985,812.432,730.243,822.349,697.43,880.062C664.856,937.353,691.988,1006.941,728.323,1061.924C760.42,1110.494,812.211,1139.24,870.373,1141.767" fill="rgba(22, 112, 134, 0.69)" class="triangle-float15"></path>
+        <path d="M1069.771,786.013C1104.37,785.841,1126.954,753.053,1142.62,722.204C1156.537,694.798,1158.909,664.046,1145.831,636.23C1130.223,603.032,1106.447,567.994,1069.771,567.252C1032.335,566.494,1004.277,599.231,988.182,633.039C974.33,662.137,980.491,694.499,995.657,722.934C1012.02,753.613,1035.001,786.186,1069.771,786.013" fill="rgba(22, 112, 134, 0.69)" class="triangle-float16"></path>
+        <path d="M460.406,544.843C488.818,542.954,505.894,515.909,518.674,490.463C529.85,468.21,533.675,443.211,522.668,420.874C510.189,395.549,488.583,373.965,460.406,372.21C429.369,370.277,398.65,385.259,383.085,412.18C367.505,439.127,371.296,472.327,386.97,499.22C402.523,525.905,429.587,546.892,460.406,544.843" fill="rgba(22, 112, 134, 0.69)" class="triangle-float17"></path>
+        <path d="M478.182,198.694C521.875,196.282,554.097,161.154,573.716,122.038C591.161,87.257,590.643,46.882,571.244,13.152C551.785,-20.681,517.207,-43.465,478.182,-44.069C438.108,-44.689,401.864,-23.394,379.997,10.194C355.681,47.544,341.857,94.176,362.446,133.703C384.353,175.761,430.832,201.308,478.182,198.694" fill="rgba(22, 112, 134, 0.69)" class="triangle-float18"></path>
+        <path d="M962.093,922.452C989.289,921.249,1014.011,908.181,1028.542,885.161C1044.219,860.325,1051.523,829.075,1037.235,803.414C1022.632,777.187,992.097,764.905,962.093,765.819C933.681,766.685,909.4,783.566,894.486,807.764C878.676,833.416,869.314,865.571,884.616,891.529C899.751,917.204,932.318,923.769,962.093,922.452" fill="rgba(22, 112, 134, 0.69)" class="triangle-float19"></path>
+        <path d="M1606.014,911.776C1700.381,911.414,1791.014,868.76,1839.139,787.585C1888.198,704.833,1891.863,598.873,1839.276,518.317C1790.598,443.748,1695.052,432.009,1606.014,430.467C1513.087,428.857,1409.419,432.352,1358.32,509.985C1303.392,593.435,1317.342,704.343,1369.769,789.387C1419.652,870.303,1510.959,912.141,1606.014,911.776" fill="rgba(22, 112, 134, 0.69)" class="triangle-float20"></path>
+    </g>
+    <defs>
+        <mask id="SvgjsMask1275">
+            <rect width="1500" height="1000" fill="#ffffff"></rect>
+        </mask>
+        <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1276">
+            <stop stop-color="#0e2a47" offset="0"></stop>
+            <stop stop-color="rgba(7, 51, 107, 1)" offset="1"></stop>
+        </linearGradient>
+<style>
+@keyframes float1 {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(-500px, 125px)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+.triangle-float1 {
+  animation: float1 25s infinite;
+}
+
+@keyframes float2 {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(-250px, -150px)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+.triangle-float2 {
+  animation: float2 20s infinite;
+}
+
+@keyframes float3 {
+  0% {
+    transform: translate(0, 0)
+  }
+
+  50% {
+    transform: translate(200px, -500px)
+  }
+
+  100% {
+    transform: translate(0, 0)
+  }
+}
+
+.triangle-float3 {
+  animation: float3 36s infinite;
+}
+
+@keyframes float4 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-250px, 300px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float4 {
+  animation: float4 26s infinite;
+}
+
+@keyframes float5 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-100px, 250px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float5 {
+  animation: float5 56s infinite;
+}
+
+@keyframes float6 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(300px, -400px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float6 {
+  animation: float6 70s infinite;
+}
+
+@keyframes float7 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-450px, 150px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float7 {
+  animation: float7 85s infinite;
+}
+
+@keyframes float8 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-300px, 200px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float8 {
+  animation: float8 35s infinite;
+}
+
+@keyframes float9 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(400px, -300px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float9 {
+  animation: float9 30s infinite;
+}
+
+@keyframes float10 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-150px, 400px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float10 {
+  animation: float10 28s infinite;
+}
+
+@keyframes float11 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(100px, -450px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float11 {
+  animation: float11 56s infinite;
+}
+
+@keyframes float12 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-250px, 300px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float12 {
+  animation: float12 98s infinite;
+}
+
+@keyframes float13 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(400px, 200px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float13 {
+  animation: float13 130s infinite;
+}
+
+@keyframes float14 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-350px, -100px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float14 {
+  animation: float14 46s infinite;
+}
+
+@keyframes float15 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(250px, 350px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float15 {
+  animation: float15 38s infinite;
+}
+
+@keyframes float16 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-450px, 100px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float16 {
+  animation: float16 22s infinite;
+}
+
+@keyframes float17 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(300px, -350px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float17 {
+  animation: float17 100s infinite;
+}
+
+@keyframes float18 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(150px, 450px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float18 {
+  animation: float18 12s infinite;
+}
+
+@keyframes float19 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-400px, -200px);
+  }
+
+  /* Exemple de valeurs aléatoires */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float19 {
+  animation: float19 20s infinite;
+}
+
+@keyframes float20 {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(400px, -100px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.triangle-float20 {
+  animation: float20 60s infinite;
+}</style>
+    </defs>
+</svg>

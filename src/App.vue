@@ -1,11 +1,11 @@
 <template>
   <div class="h-screen flex flex-col justify-between background">
-    <RouterView class="h-[90%] sm:h-[75%]" v-slot="{ Component }">
+    <RouterView class="h-[90%]" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
     </RouterView>
-    <NavBar class="w-full h-[10%] sm:h-[7%]" v-if="$userStore.isUserConnected()" />
+    <NavBar class="fixed w-full h-[9%] bottom-0" v-if="$userStore.isUserConnected()" />
   </div>
 </template>
 
@@ -34,7 +34,7 @@ export default {
 <style scoped>
 .background {
   scroll-behavior: smooth;
-  background-image: url('./components/MessageBackgroundSVG.svg');
+  background-image: url('./components/BackgroundSVG.svg');
   background-repeat: repeat;
 }
 
