@@ -1,11 +1,11 @@
 <template>
-  <div class="h-screen flex flex-col justify-between background overflow-hidden">
-    <RouterView class="h-[90%] overflow-hidden mb-12 md:mb-14" v-slot="{ Component }">
+  <div class="element-sans-scroll h-screen flex flex-col justify-between background overflow-hidden">
+    <RouterView class="element-sans-scroll h-[90%] overflow-hidden mb-12 md:mb-14" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
-        <component :is="Component" />
+        <component class="element-sans-scroll" :is="Component" />
       </transition>
     </RouterView>
-    <NavBar class="fixed w-full h-[9%] bottom-0" v-if="$userStore.isUserConnected()" />
+    <NavBar class="overflow-hidden fixed w-full h-[9%] bottom-0" v-if="$userStore.isUserConnected()" />
   </div>
 </template>
 
@@ -46,5 +46,11 @@ export default {
 .fade-enter,
 .fade-leave-to {
   opacity: 0;
+}
+
+.element-sans-scroll {
+   overflow: hidden;
+   touch-action: none; /* ou touch-action: pan-y; */
+   overscroll-behavior-y: contain; /* ou overscroll-behavior-y: none; */
 }
 </style>
