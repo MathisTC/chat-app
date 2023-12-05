@@ -1,8 +1,8 @@
 <template>
-  <div class="element-sans-scroll h-screen flex flex-col justify-between background overflow-hidden">
-    <RouterView class="element-sans-scroll h-[90%] overflow-hidden mb-12 md:mb-14" v-slot="{ Component }">
+  <div class="h-screen flex flex-col justify-between background overflow-hidden">
+    <RouterView class="h-[90%] overflow-hidden mb-12 md:mb-14" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
-        <component class="element-sans-scroll" :is="Component" />
+        <component :is="Component" />
       </transition>
     </RouterView>
     <NavBar class="overflow-hidden fixed w-full h-[9%] bottom-0" v-if="$userStore.isUserConnected()" />
