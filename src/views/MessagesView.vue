@@ -1,25 +1,29 @@
 <template>
   <div class="justify-between flex flex-col element-sans-scroll">
-    <MessageHeader class="w-full h-[8%] sm:hidden" />
+    <div class="w-full h-[8%] relative">
+      <MessageHeader />
+    </div>
     <div class="flex flex-col flex-1 overflow-hidden">
       <div class="scroll-possible overflow-y-auto flex-1" ref="messageList">
         <div v-for="(message, index) in messagesList" :key="index" class="chat px-2"
-        :class="$userStore.getUID() == message.userId ? 'chat-end' : 'chat-start'">
-        <div class="chat-image avatar">
-          <div class="w-10 rounded-full">
-            <img alt="Tailwind CSS chat bubble component" :src="message.userImage" />
+          :class="$userStore.getUID() == message.userId ? 'chat-end' : 'chat-start'">
+          <div class="chat-image avatar">
+            <div class="w-10 rounded-full">
+              <img alt="Tailwind CSS chat bubble component" :src="message.userImage" />
+            </div>
           </div>
-        </div>
-        <div class="chat-header">
-          {{ message.userPrenom }} {{ message.userNom }}
-          <time class="text-xs opacity-50">{{ message.date }}</time>
-        </div>
-        <div class="chat-bubble" :class="$userStore.getUID() == message.userId ? 'bg-[#0071fb] text-newwhite' : 'text-newwhite'">{{ message.texte }}</div>
+          <div class="chat-header">
+            {{ message.userPrenom }} {{ message.userNom }}
+            <time class="text-xs opacity-50">{{ message.date }}</time>
+          </div>
+          <div class="chat-bubble"
+            :class="$userStore.getUID() == message.userId ? 'bg-[#0071fb] text-newwhite' : 'text-newwhite'">{{
+              message.texte }}</div>
         </div>
       </div>
     </div>
-    <div class="sm:flex sm:flex-col">
-      <MessageBottom class="mt-2 relative bottom-0 w-full" @send="(message) => sendMessage(message)" />
+    <div class="mt-2 relative bottom-0 w-full">
+      <MessageBottom @send="(message) => sendMessage(message)" />
     </div>
   </div>
 </template>
@@ -45,7 +49,7 @@ export default {
   async mounted() {
     this.getMessagesFromDatabase()
     this.unsubscribe = onSnapshot(collection(db, 'message'), (snap) => {
-      if(snap.docChanges()[0].type == 'added') {
+      if (snap.docChanges()[0].type == 'added') {
         this.getMessagesFromDatabase()
       }
     })
@@ -78,5 +82,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
