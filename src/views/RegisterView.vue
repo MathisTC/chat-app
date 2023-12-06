@@ -86,7 +86,7 @@ export default {
       fileBytes: null,
       nom: '',
       prenom: '',
-      image: '@/assets/icon.png',
+      image: 'https://www.freeiconspng.com/thumbs/profile-icon-png/profile-icon-9.png',
       email: '',
       password: '',
       password2: '',
