@@ -73,7 +73,7 @@
 <script>
 import { uploadImage } from '../queries/uploadImages.js'
 import { createUserData } from '../queries/userQueries.js'
-import iconImage from '@/assets/icon.png'; // Chemin relatif vers votre image
+import iconImage from '/public/icon.png'; // Chemin relatif vers votre image
 
 import { Cropper, CircleStencil } from 'vue-advanced-cropper';
 import 'vue-advanced-cropper/dist/style.css';
@@ -86,7 +86,7 @@ export default {
       fileBytes: null,
       nom: '',
       prenom: '',
-      image: '/src/assets/icon.png',
+      image: '/public/icon.png',
       email: '',
       password: '',
       password2: '',
