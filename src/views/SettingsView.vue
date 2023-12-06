@@ -6,7 +6,7 @@
         <p class="py-6">Vous pouvez ici modifier différents paramètres de votre compte</p>
       </div>
       <div class="card shrink-0 w-full max-w-sm shadow-2xl bg-[#021137d9]">
-        <form class="card-body">
+        <div class="card-body">
           <div class="form-control">
             <label class="label">
               <span class="label-text">Nom</span>
@@ -38,11 +38,11 @@
               </form>
             </div>
           </dialog>
-
+          <div v-if="saved" class="text-center font-bold text-success">Les paramètres ont été changés</div>
           <div class="form-control mt-6">
-            <button class="btn">Sauvegarder</button>
+            <button class="btn" @click="saveParameters()">Sauvegarder</button>
           </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
@@ -64,7 +64,9 @@ export default {
       prenom: '',
       nom: '',
       image: '',
-      changeImg: false
+      changeImg: false,
+      fileBytes: null,
+      saved: false
     }
   },
   methods: {
@@ -89,6 +91,11 @@ export default {
       const file = e.target.files[0];
       this.image = URL.createObjectURL(file);
       this.changeImg = true
+    },
+    async saveParameters() {
+      await uploadImage(this.fileBytes, this.$userStore.getUID()).then((image) => {
+        this.saved=true
+      })
     }
   },
 

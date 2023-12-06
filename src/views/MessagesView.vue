@@ -1,6 +1,6 @@
 <template>
   <div class="justify-between flex flex-col element-sans-scroll">
-    <MessageHeader class="w-full h-[7%] relative" />
+    <MessageHeader class="w-full h-[8%] sticky" />
     <div class="flex flex-col flex-1 overflow-hidden">
       <div class="scroll-possible overflow-y-auto flex-1" ref="messageList">
       <div v-for="(message, index) in messagesList" :key="index" class="chat px-2"
@@ -17,7 +17,7 @@
         <div class="chat-bubble" :class="$userStore.getUID() == message.userId ? 'bg-[#0071fb] text-newwhite' : 'text-newwhite'">{{ message.texte }}</div>
       </div>
     </div>
-    <MessageBottom class="relative bottom-0 w-full" @send="(message) => sendMessage(message)" />
+    <MessageBottom class="mt-3 sticky bottom-0 w-full" @send="(message) => sendMessage(message)" />
 
   </div>
   </div>
