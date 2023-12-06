@@ -1,6 +1,6 @@
 <template>
   <div class="h-screen flex flex-col justify-between background">
-    <RouterView  :class="$userStore.isUserConnected() ? 'h-[90%] mb-12 md:mb-14' : 'h-full overflow-auto'" v-slot="{ Component }">
+    <RouterView  :class="$userStore.isUserConnected() ? 'h-[90%] mb-12 md:mb-14' : 'h-[100%]'" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
