@@ -7,8 +7,8 @@
       title="Général" description="Tout le monde participe" />
 
 
-    <div class="flex justify-center mt-2">
-      <button class="mx-5 btn w-[90%] text-center btn-outline btn-info">Ajouter un chat (non fonctionnel)</button>
+    <div @click="displayNewChat = true" class="flex justify-center mt-2">
+      <NewChat />
     </div>
 
   </div>
@@ -16,13 +16,14 @@
 
 <script>
 import ChatPreview from "../components/ChatPreview.vue"
+import NewChat from "../components/NewChat.vue"
 export default {
   data() {
     return {
     }
   },
   components: {
-    ChatPreview
+    ChatPreview, NewChat
   },
   mounted() {
   },
