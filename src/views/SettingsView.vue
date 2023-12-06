@@ -1,5 +1,5 @@
 <template>
-  <div class="hero scroll-possible w-full">
+  <div class="hero w-full">
     <div class="hero-content flex-col lg:flex-row-reverse">
       <div class="text-center lg:text-left">
         <h1 class="text-5xl font-bold">Paramètres</h1>

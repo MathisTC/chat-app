@@ -1,5 +1,5 @@
 <template>
-  <div class="justify-between flex flex-col">
+  <div class="justify-between flex flex-col element-sans-scroll">
     <MessageHeader class="w-full h-[8%] relative" />
     <div class="flex flex-col flex-1 overflow-hidden relative">
       <div class="scroll-possible overflow-y-auto flex-1" ref="messageList">
@@ -14,7 +14,7 @@
           {{ message.userPrenom }} {{ message.userNom }}
           <time class="text-xs opacity-50">{{ message.date }}</time>
         </div>
-        <div class="chat-bubble" :class="$userStore.getUID() == message.userId ? 'bg-[#0071fb] text-gray-800' : 'text-slate-300'">{{ message.texte }}</div>
+        <div class="chat-bubble" :class="$userStore.getUID() == message.userId ? 'bg-[#0071fb] text-newwhite' : 'text-newwhite'">{{ message.texte }}</div>
       </div>
     </div>
     <MessageBottom class="relative bottom-0 w-full" @send="(message) => sendMessage(message)" />

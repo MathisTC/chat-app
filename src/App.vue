@@ -1,5 +1,5 @@
 <template>
-  <div class="element-sans-scroll h-screen flex flex-col justify-between background overflow-hidden">
+  <div class="h-screen flex flex-col justify-between background">
     <RouterView class="overflow-hidden" :class="$userStore.isUserConnected() ? 'h-[90%] mb-12 md:mb-14' : 'h-[100%]'" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />

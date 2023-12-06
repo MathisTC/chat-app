@@ -1,5 +1,5 @@
 <template>
-  <div class="hero overflow-y-auto scroll-possible w-full">
+  <div class="hero w-full">
   <div class="hero-content flex-col lg:flex-row">
     <img :src="$userStore.getUserImage()" class="max-w-[12rem] rounded-full shadow-2xl" />
     <div>
