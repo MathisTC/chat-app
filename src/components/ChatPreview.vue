@@ -16,9 +16,7 @@
 <script>
 
 export default {
-  props: {
-    link, img, title, description
-  },
+  props: ['link', 'img', 'title', 'description'],
   data() {
     return {
     }
