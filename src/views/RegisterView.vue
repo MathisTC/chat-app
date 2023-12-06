@@ -2,7 +2,7 @@
   <section class="h-screen my-auto overflow-scroll">
     <div class="flex flex-col items-center justify-center px-3 py-8 mx-auto md:h-screen lg:py-0">
       <a class="flex items-center mb-6 text-2xl font-semibold text-white">
-        Enregistrement
+        Création d'un compte
       </a>
       <div
         class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-[#021137d9] border-gray-700">

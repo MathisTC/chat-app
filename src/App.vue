@@ -1,6 +1,6 @@
 <template>
   <div class="element-sans-scroll h-screen flex flex-col justify-between background overflow-hidden">
-    <RouterView class="h-[90%] overflow-hidden mb-12 md:mb-14" v-slot="{ Component }">
+    <RouterView class="overflow-hidden" :class="$userStore.isUserConnected() ? 'h-[90%] mb-12 md:mb-14' : 'h-[100%]'" v-slot="{ Component }">
       <transition name="fade" mode="out-in">
         <component :is="Component" />
       </transition>
@@ -26,7 +26,6 @@ export default {
     }
   },
   mounted() {
-    document.fullscreenEnabled
     }
 }
 </script>
