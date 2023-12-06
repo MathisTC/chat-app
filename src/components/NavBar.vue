@@ -26,7 +26,7 @@ export default {
       this.menuSelected = id;
       switch(id) {
         case 1:
-          this.$router.push('/messages')
+          this.$router.push('/group-list')
           break
         case 2:
           this.$router.push('/')

@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="1500" height="1000" preserveAspectRatio="none" viewBox="0 0 1500 1000">
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="3000" height="2000" preserveAspectRatio="none" viewBox="0 0 3000 2000">
     <g mask="url(&quot;#SvgjsMask1275&quot;)" fill="none">
-        <rect width="1500" height="1000" x="0" y="0" fill="rgba(7, 51, 107, 1)"></rect>
+        <rect width="3000" height="2000" x="0" y="0" fill="rgba(7, 51, 107, 1)"></rect>
         <path d="M316.833,616.998C368.844,616.161,419.057,592.793,444.838,547.613C470.411,502.796,465.137,447.664,438.767,403.311C413.006,359.981,367.213,330.585,316.833,332.311C269.001,333.95,233.679,370.46,208.563,411.2C181.708,454.76,157.66,506.564,181.486,551.852C206.472,599.345,263.175,617.862,316.833,616.998" fill="rgba(22, 112, 134, 0.69)" class="triangle-float1"></path>
         <path d="M979.445,191.288C1025.825,193.067,1074.172,177.884,1097.934,138.014C1122.166,97.355,1115.681,45.536,1090.015,5.767C1066.397,-30.828,1022.977,-46.957,979.445,-45.58C938.453,-44.283,901.271,-22.884,880.365,12.401C859.024,48.42,855.43,92.869,875.715,129.493C896.615,167.229,936.34,189.635,979.445,191.288" fill="rgba(22, 112, 134, 0.69)" class="triangle-float2"></path>
         <path d="M111.731,589.951C153.434,592.262,193.236,567.188,212.029,529.888C229.322,495.566,214.301,457.135,195.553,423.586C176.16,388.883,151.457,351.899,111.731,350.403C70.192,348.838,34.454,379.481,16.207,416.83C-0.057,450.121,11.099,487.306,28.999,519.746C47.727,553.687,73.025,587.806,111.731,589.951" fill="rgba(22, 112, 134, 0.69)" class="triangle-float3"></path>
@@ -24,7 +24,7 @@
     </g>
     <defs>
         <mask id="SvgjsMask1275">
-            <rect width="1500" height="1000" fill="#ffffff"></rect>
+            <rect width="3000" height="2000" fill="#ffffff"></rect>
         </mask>
         <linearGradient x1="100%" y1="50%" x2="0%" y2="50%" gradientUnits="userSpaceOnUse" id="SvgjsLinearGradient1276">
             <stop stop-color="#0e2a47" offset="0"></stop>

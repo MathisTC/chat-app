@@ -1,26 +1,24 @@
 <template>
   <section class="h-screen my-auto">
     <div class="flex flex-col items-center justify-center px-3 py-8 mx-auto md:h-screen lg:py-0">
-      <div
-        class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-[#021137d9] border-gray-700">
+      <div class="w-full rounded-lg shadow border md:mt-0 sm:max-w-md xl:p-0 bg-[#021137d9] border-gray-700">
         <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
           <h1 class="text-xl font-bold leading-tight tracking-tight md:text-2xl text-white">
             Créez un compte
           </h1>
           <form class="space-y-4 md:space-y-6" @submit.prevent="register">
-            <div class="flex justify-center items-center gap-6">
-              <a class="btn" onclick="my_modal_2.showModal()">Choisir une image</a>
-              <img class="rounded-full w-16 h-16" :src="image" v-if="image !== '' && fileBytes !== null" />
+            <div class="flex justify-center pt-2">
+              <img ref="myImage" onclick="my_modal_2.showModal()" class="rounded-full w-16 h-16" :src="image"
+                v-if="image !== ''" />
             </div>
-
             <dialog id="my_modal_2" class="modal">
               <div class="modal-box bg-[#021137d9]">
                 <h3 class="font-bold text-lg">Hello!</h3>
                 <p class="py-4">Veuillez choisir une image puis la rogner</p>
                 <input @change="onFileChange" type="file"
                   class="file-input file-input-bordered file-input-accent ghost w-full max-w-xs mb-2" />
-                <cropper ref="cropper" v-if="image != '' && changeImg" :src="image" :stencil-props="{ aspectRatio: 1 / 1 }"
-                  :stencil-component="$options.components.CircleStencil" />
+                <cropper ref="cropper" v-if="image != '' && changeImg" :src="image"
+                  :stencil-props="{ aspectRatio: 1 / 1 }" :stencil-component="$options.components.CircleStencil" />
                 <form method="dialog" class="modal-backdrop">
                   <button class="btn mt-5 btn-outline btn-error btn-sm btn-block">Annuler</button>
                   <button v-if="image != ''" class="btn mt-5 btn-outline btn-success btn-sm btn-block"
@@ -51,13 +49,13 @@
               <label for="password" class="block mb-2 text-sm font-medium text-white">Mot de
                 passe</label>
               <input v-model="password" type="password" name="password" id="password" placeholder="••••••••"
-              class="border sm:text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
-              </div>
+                class="border sm:text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
+            </div>
             <div>
               <label for="password2" class="block mb-2 text-sm font-medium text-white">Confirmation du
                 mot de passe</label>
               <input v-model="password2" type="password" name="password2" id="password2" placeholder="••••••••"
-              class="border sm:text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
+                class="border sm:text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
             </div>
             <p v-if="error != ''"> {{ error }} </p>
             <button class="w-full text-center btn btn-outline btn-info">S'enregistrer</button>
@@ -75,6 +73,7 @@
 <script>
 import { uploadImage } from '../queries/uploadImages.js'
 import { createUserData } from '../queries/userQueries.js'
+import iconImage from '@/assets/icon.png'; // Chemin relatif vers votre image
 
 import { Cropper, CircleStencil } from 'vue-advanced-cropper';
 import 'vue-advanced-cropper/dist/style.css';
@@ -87,12 +86,12 @@ export default {
       fileBytes: null,
       nom: '',
       prenom: '',
-      image: '',
+      image: '/src/assets/icon.png',
       email: '',
       password: '',
       password2: '',
       error: '',
-      changeImg: true
+      changeImg: false
     };
   },
   methods: {
@@ -143,8 +142,13 @@ export default {
       this.image = URL.createObjectURL(file);
       this.changeImg = true
     }
+  },
+  async mounted() {
+    const response = await fetch(iconImage);
+    const arrayBuffer = await response.arrayBuffer();
+    this.fileBytes = new Uint8Array(arrayBuffer);
   }
-};
+}
 </script>
   
 <style scoped></style>

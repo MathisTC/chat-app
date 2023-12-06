@@ -9,6 +9,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import MessagesView from '../views/MessagesView.vue'
 import SettingsView from '../views/SettingsView.vue'
+import GroupListView from '../views/GroupListView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -35,6 +36,12 @@ const router = createRouter({
       path: '/messages',
       name: 'messages',
       component: MessagesView,
+      meta: { requiresAuth: true },
+    },
+    {
+      path: '/group-list',
+      name: 'group-list',
+      component: GroupListView,
       meta: { requiresAuth: true },
     },
     {

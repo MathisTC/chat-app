@@ -38,9 +38,10 @@
               </form>
             </div>
           </dialog>
+          
           <div v-if="saved" class="text-center font-bold text-success">Les paramètres ont été changés</div>
           <div class="form-control mt-6">
-            <button class="btn" @click="saveParameters()">Sauvegarder</button>
+            <button class="btn btn-info btn-outline" @click="saveParameters()">Sauvegarder</button>
           </div>
         </div>
       </div>
