@@ -46,12 +46,12 @@
 </template>
 
 <script>
-import { uploadImage } from '../queries/uploadImages.js'
-import { createUserData } from '../queries/userQueries.js'
+import { createGroup } from '../queries/groupQueries.js'
 
 import { Cropper, CircleStencil } from 'vue-advanced-cropper';
 import 'vue-advanced-cropper/dist/style.css';
 export default {
+  emits: ['newGroup'],
   components: {
     Cropper, CircleStencil
   },
@@ -95,13 +95,11 @@ export default {
         this.error = 'Un champ est manquant'
         return
       }
-      console.log(this.fileBytes)
-      console.log(this.titre)
-      console.log(this.description)
-
+      await createGroup(this.$userStore.getUID(), this.titre, this.description, this.fileBytes).then(() => {
+        this.$emit('newGroup')
+      })
     }
   },
-
   async mounted() {
   }
 }

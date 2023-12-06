@@ -38,3 +38,40 @@ export async function getMessages() {
   })
   return messages.reverse();
 }
+
+
+export async function sendNewGroupMessage(uid, prenom, nom, image, texte, groupId) {
+  try {
+    const currentDate = new Date();
+    const jour = currentDate.getDate().toString().padStart(2, '0');
+    const mois = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+    const heure = currentDate.getHours().toString().padStart(2, '0');
+    const an = currentDate.getFullYear().toString().padStart(2, '0');
+    const minutes = currentDate.getMinutes().toString().padStart(2, '0');
+    const seconds = currentDate.getSeconds().toString().padStart(2, '0');
+
+    const dateFormatted = `${jour}/${mois}/${an}: ${heure}h${minutes}:${seconds}`;
+    await addDoc(collection(db, "group/"+groupId+"/messages"), {
+      userId: uid,
+      userNom: nom,
+      userPrenom: prenom,
+      userImage: image,
+      texte: texte,
+      date: dateFormatted
+    });
+  } catch (error) {
+    console.log(error)
+    console.error('Erreur lors de la création des données utilisateur :', error);
+  }
+}
+
+export async function getGroupMessages(id) {
+  let messages = []
+  const messageDataRef = collection(db, "group/"+id+"/messages");
+  const querySnapshot = await getDocs(query(messageDataRef, orderBy("date", "desc"), limit(20)));
+
+  querySnapshot.forEach((doc) => {
+    messages.push(doc.data());
+  })
+  return messages.reverse();
+}
