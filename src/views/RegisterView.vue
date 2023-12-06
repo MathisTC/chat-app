@@ -60,7 +60,7 @@
               class="border sm:text-sm rounded-lg block w-full p-2.5 bg-gray-700 border-gray-600 placeholder-gray-400 text-white focus:ring-blue-500 focus:border-blue-500">
             </div>
             <p v-if="error != ''"> {{ error }} </p>
-            <button class="w-full text-center btn btn-outline btn-accent">S'enregistrer</button>
+            <button class="w-full text-center btn btn-outline btn-info">S'enregistrer</button>
             <p class="text-sm font-light text-gray-400">
               Vous avez déjà un compte ? <router-link :to="{ path: '/login' }"
                 class="font-bold hover:underline text-primary-500">Connectez vous</router-link>

@@ -23,7 +23,7 @@
                                 required="">
                         </div>
 
-                        <button class="w-full text-center btn btn-outline btn-accent">Se connecter</button>
+                        <button class="w-full text-center btn btn-outline btn-info">Se connecter</button>
                         <p class="text-sm font-light text-gray-400">
                             Vous n'avez pas de compte ? <router-link :to="{ path: '/register' }"
                                 class="font-bold hover:underline text-primary-500">Enregistrez
