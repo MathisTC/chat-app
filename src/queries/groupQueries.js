@@ -11,6 +11,7 @@ export async function createGroup(userId, titre, description, fileBytes) {
       uploadImage(fileBytes, 'group/' + document.id).then(()=> {
 })
       setDoc(doc(db, "group/" + document.id), {
+        members: [],
         titre: titre,
         description: description,
         ownerId: userId,
@@ -41,4 +42,28 @@ export async function getGroup() {
     console.log("Aucun document correspondant trouvé !");
     return null;
   }
+}
+
+export async function getMembers() {
+  const groupsRef = collection(db, "group");
+  const querySnapshot = await getDocs(query(groupsRef));
+  let groupData = []
+  querySnapshot.forEach((doc) => {
+    const document = {
+      data: doc.data(), 
+      id: doc.id
+    }
+    groupData.push(document);
+  })
+
+  if (!querySnapshot.empty) {
+    return groupData;
+  } else {
+    console.log("Aucun document correspondant trouvé !");
+    return null;
+  }
+}
+
+export async function setMembers() {
+
 }

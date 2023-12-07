@@ -39,6 +39,16 @@ export async function getMessages() {
   return messages.reverse();
 }
 
+export async function getMessage(id) {
+  const messageDataRef = doc(collection(db, "message"), id);
+  const docSnapshot = await getDoc(messageDataRef);
+
+  if (docSnapshot.exists()) {
+    return { id: docSnapshot.id, ...docSnapshot.data() };
+  } else {
+    return null;
+  }
+}
 
 export async function sendNewGroupMessage(uid, prenom, nom, image, texte, groupId) {
   try {
@@ -74,4 +84,15 @@ export async function getGroupMessages(id) {
     messages.push(doc.data());
   })
   return messages.reverse();
+}
+
+export async function getGroupMessage(id, messageId) {
+  const messageDataRef = doc(collection(db, "group/"+id+"/messages"), messageId);
+  const docSnapshot = await getDoc(messageDataRef);
+
+  if (docSnapshot.exists()) {
+    return { id: docSnapshot.id, ...docSnapshot.data() };
+  } else {
+    return null;
+  }
 }

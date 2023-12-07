@@ -3,6 +3,7 @@
     <div class="w-full h-[8%] relative">
       <MessageHeader />
     </div>
+
     <div class="flex flex-col flex-1 overflow-hidden">
       <div class="scroll-possible overflow-y-auto flex-1" ref="messageList">
         <div v-for="(message, index) in messagesList" :key="index" class="chat px-2"
@@ -32,7 +33,7 @@
 import { db } from '../firebaseConfig';
 import { doc, setDoc, onSnapshot, collection } from 'firebase/firestore'
 
-import { getMessages, sendNewMessage } from '../queries/messageQueries.js'
+import { getMessage, getMessages, sendNewMessage } from '../queries/messageQueries.js'
 import MessageBottom from '../components/MessageBottom.vue';
 import MessageHeader from '../components/MessageHeader.vue';
 export default {
@@ -40,7 +41,8 @@ export default {
     return {
       unsubscribe: null,
       subscribePopUp: null,
-      messagesList: []
+      messagesList: [],
+      loaded: false
     }
   },
   components: {
@@ -49,8 +51,14 @@ export default {
   async mounted() {
     this.getMessagesFromDatabase()
     this.unsubscribe = onSnapshot(collection(db, 'message'), (snap) => {
-      if (snap.docChanges()[0].type == 'added') {
-        this.getMessagesFromDatabase()
+      if (snap.docChanges()[0].type == 'added' && this.loaded && snap.docChanges().length == 1) {
+        getMessage(snap.docChanges()[0].doc.id).then((r) => {
+          this.messagesList.push(r)
+          this.scrollMessageListToBottom();
+        })
+      } else {
+        this.scrollMessageListToBottom();
+        this.loaded = true
       }
     })
   },
@@ -62,7 +70,6 @@ export default {
   methods: {
     async sendMessage(message) {
       await sendNewMessage(this.$userStore.getUID(), this.$userStore.getUserPrenom(), this.$userStore.getUserNom(), this.$userStore.getUserImage(), message).then(() => {
-        this.getMessagesFromDatabase()
       })
     },
 
@@ -75,8 +82,12 @@ export default {
       })
     },
     scrollMessageListToBottom() {
-      const messageList = this.$refs.messageList;
-      messageList.scrollTop = messageList.scrollHeight;
+      this.$nextTick(() => {
+        const messageList = this.$refs.messageList;
+        if (messageList) {
+          messageList.scrollTop = messageList.scrollHeight;
+        }
+      });
     }
   },
 };
